@@ -21,8 +21,10 @@ Difficulty in reporting on public health trends and treatment efficacy.
 Slide 3: Context
 The Growing Crisis:
 Drug addiction remains a significant public health crisis globally, leading to substantial societal and economic costs. Effective treatment requires a holistic, long-term approach encompassing medical, psychological, and social support.
+![save macrine](https://github.com/user-attachments/assets/6b59418e-1958-4550-b262-219604c21c3d)
 
 Current Landscape Challenges:
+![macrine grant](https://github.com/user-attachments/assets/2569ec70-d612-4246-99c9-8efc417ffed6)
 
 Diverse Stakeholders: Treatment involves hospitals, clinics, rehabilitation centers, outpatient programs, community support groups, and law enforcement.
 Information Disparity: Each entity often uses its own system, if any, leading to inconsistent data formats, duplicate entries, and information gaps.
@@ -62,7 +64,8 @@ Ensure Data Integrity and Security: Implement robust data validation rules, audi
 Support Data-Driven Decision Making: Provide reporting and analytical tools for individual patient care optimization and broader program evaluation/resource allocation.
 Facilitate Regulatory Reporting: Generate required reports for government agencies and funding bodies efficiently and accurately.
 Slide 6: BPMN Diagram Description: Patient Admission and Initial Assessment
-(Note: I cannot draw a diagram, but I will describe a simplified Business Process Model and Notation (BPMN) diagram for a typical patient admission and initial assessment flow.)
+(Note: I cannot draw a diagram, but I will describe a simplified Business Process Model and Notation (BPMN) diagram for a typical patient admission and initial assessment flo![macrine alterd](https://github.com/user-attachments/assets/f50447ce-f4a4-4518-ac4c-70a01c69537f)
+w.)
 
 Diagram Title: Patient Admission and Initial Assessment Process
 
@@ -79,6 +82,7 @@ Within Front Desk/Admissions: Admissions Officer
 Within Medical Staff: Nurse, Doctor
 Within Therapist/Counselor: Counselor
 Start Event:
+![macrine pdb](https://github.com/user-attachments/assets/fbb1d86e-3278-427b-8924-cec5f555bb54)
 
 Start Event: "Patient Arrives for Admission" (circle with single thin border)
 Tasks (Activities - Rectangles with rounded corners):
@@ -111,15 +115,18 @@ Connect tasks, gateways, and events in chronological order.
 Show messages between pools (e.g., from Patient to Front Desk, from System to Medical Staff for notifications).
 Simplified Flow:
 Patient Arrives -> [Admissions Officer] Collect Info -> [System] Create Record -> [Nurse] Vitals -> [Doctor] Medical Eval -> (Decision: Detox?) -> If No Detox -> [Counselor] Addiction Assessment -> Initial Assessments Complete.
+![macrinee tables](https://github.com/user-attachments/assets/04ce34f2-b18f-4e07-9b53-25c0f5b648ac)
 
 Slide 7: Logical Flow and Dependencies
 The implementation of an integrated patient management system for drug addiction would involve the following logical flow and dependencies, focusing on a robust backend:
 
 Database Schema Design:
+![UML](https://github.com/user-attachments/assets/b7cbc1dc-1107-45ea-93cb-bab76b265c2d)
 
 Dependency: Detailed understanding of all data entities (Patients, Providers, Treatment Plans, Medications, Assessments, Appointments, Progress Notes, Relapses, etc.) and their relationships.
 Activity: Design the relational database schema with appropriate tables, columns, data types, primary keys, foreign key constraints to enforce relationships and data integrity. Utilize normalization principles.
 Backend Logic Development (e.g., PL/SQL Packages, API Services):
+![The-BPMN-diagram](https://github.com/user-attachments/assets/400d739e-2cc5-4e60-ba68-4ebd9b242d98)
 
 Dependency: Completed Database Schema.
 Activity: Develop server-side logic to encapsulate business rules, data validation, and data access operations. This could involve:
@@ -132,6 +139,8 @@ User Interface (UI) Development:
 Dependency: Stable Backend Logic (Database and PL/SQL/API services).
 Activity: Develop a user-friendly front-end application (e.g., web application using React/Angular, mobile app, or specialized healthcare EMR interface) that interacts with the backend. The UI would allow users to perform their tasks efficiently and intuitively.
 Security and Access Control:
+![alterd sesion](https://github.com/user-attachments/assets/45e921aa-2fb8-49d7-9cfe-e23273125197)
+![aletr plaggable](https://github.com/user-attachments/assets/7735edfc-cf3b-47e8-9b6e-62c06515183d)
 
 Dependency: Database Design and Backend Logic.
 Activity: Implement robust security measures at the database level (role-based access control, encryption) and application level (authentication, authorization, session management) to control user access to specific data and functionalities based on their roles and ensure HIPAA/GDPR compliance.
