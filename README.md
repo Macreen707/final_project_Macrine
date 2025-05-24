@@ -1,4 +1,4 @@
-![UML](https://github.com/user-attachments/assets/30b83d61-c3bc-4f6f-a99f-d85ce64d7148)SINGIZA GIHOZO MACRINE 
+SINGIZA GIHOZO MACRINE 
 27677
 TUES B PL WORK
 Date: May 24, 2025
@@ -120,133 +120,9 @@ Patient Arrives -> [Admissions Officer] Collect Info -> [System] Create Record -
 Slide 7: Logical Flow and Dependencies
 The implementation of an integrated patient management system for drug addiction would involve the following logical flow and dependencies, focusing on a robust backend:
 
-Database Schema Design:
-![Upload<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.9">
-  <diagram name="Page-1" id="ci_7Ii00OTVS0XRDSxQV">
-    <mxGraphModel dx="786" dy="417" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="kE_1q18LA27HoXbG5CsA-12" value="Sites" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="28" y="30" width="140" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-13" value="id nbr" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-12">
-          <mxGeometry y="30" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-14" value="name" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-12">
-          <mxGeometry y="60" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-15" value="location" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-12">
-          <mxGeometry y="90" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-16" value="Investigators" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="300" y="30" width="140" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-17" value="eid nbr and name" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-16">
-          <mxGeometry y="30" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-18" value="Speciality" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-16">
-          <mxGeometry y="60" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-19" value="site id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-16">
-          <mxGeometry y="90" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-20" value="Patients" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="580" y="40" width="140" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-21" value="id nbr and name" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-20">
-          <mxGeometry y="30" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-22" value="dob and gender" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-20">
-          <mxGeometry y="60" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-23" value="trial id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-20">
-          <mxGeometry y="90" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-26" value="Adverse events" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="530" y="300" width="140" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-27" value="id nbr" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-26">
-          <mxGeometry y="30" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-28" value="date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-26">
-          <mxGeometry y="60" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-29" value="patient id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-26">
-          <mxGeometry y="90" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-30" value="Observation" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="300" width="140" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-31" value="id nbr of observer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-30">
-          <mxGeometry y="30" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-32" value="visit date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-30">
-          <mxGeometry y="60" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-33" value="patient id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-30">
-          <mxGeometry y="90" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-41" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="kE_1q18LA27HoXbG5CsA-18">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="290" y="120" as="sourcePoint" />
-            <mxPoint x="170" y="100" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="300" y="100" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-42" value="" style="endArrow=none;html=1;rounded=0;entryX=0.019;entryY=0.178;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="kE_1q18LA27HoXbG5CsA-18" target="kE_1q18LA27HoXbG5CsA-22">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="380" y="250" as="sourcePoint" />
-            <mxPoint x="430" y="200" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="440" y="110" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-43" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="kE_1q18LA27HoXbG5CsA-26" target="kE_1q18LA27HoXbG5CsA-24">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="380" y="250" as="sourcePoint" />
-            <mxPoint x="430" y="200" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-44" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="kE_1q18LA27HoXbG5CsA-24">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="110" y="200" as="sourcePoint" />
-            <mxPoint x="430" y="200" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-45" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="kE_1q18LA27HoXbG5CsA-30">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="110" y="300" as="sourcePoint" />
-            <mxPoint x="260" y="180" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-24" value="Trials" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="270" y="180" width="200" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-48" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="kE_1q18LA27HoXbG5CsA-24" source="kE_1q18LA27HoXbG5CsA-34" target="kE_1q18LA27HoXbG5CsA-24">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-34" value="trial id nbr, name and status&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-24">
-          <mxGeometry x="15" y="30" width="170" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-35" value="start date and end date" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="kE_1q18LA27HoXbG5CsA-24">
-          <mxGeometry x="10" y="58" width="150" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kE_1q18LA27HoXbG5CsA-49" value="" style="endArrow=none;html=1;rounded=0;entryX=0.538;entryY=1.067;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="kE_1q18LA27HoXbG5CsA-19">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="380" y="180" as="sourcePoint" />
-            <mxPoint x="430" y="200" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-ing UML.jpg…]()
+Database Schema Design:![UML](https://github.com/user-attachments/assets/40bd69ff-73d2-47d5-aeb0-cb96c6038e05)
 
+           
 Dependency: Detailed understanding of all data entities (Patients, Providers, Treatment Plans, Medications, Assessments, Appointments, Progress Notes, Relapses, etc.) and their relationships.
 Activity: Design the relational database schema with appropriate tables, columns, data types, primary keys, foreign key constraints to enforce relationships and data integrity. Utilize normalization principles.
 Backend Logic Development (e.g., PL/SQL Packages, API Services):
