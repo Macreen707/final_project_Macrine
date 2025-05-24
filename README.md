@@ -1,4 +1,4 @@
-![UML](https://github.com/user-attachments/assets/85561f64-f246-4c34-a9ce-5df915e6518b)SINGIZA GIHOZO MACRINE 
+SINGIZA GIHOZO MACRINE 
 27677
 TUES B PL WORK
 Date: May 24, 2025
