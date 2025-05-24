@@ -1,4 +1,4 @@
-SINGIZA GIHOZO MACRINE 
+![UML](https://github.com/user-attachments/assets/85561f64-f246-4c34-a9ce-5df915e6518b)SINGIZA GIHOZO MACRINE 
 27677
 TUES B PL WORK
 Date: May 24, 2025
@@ -122,7 +122,7 @@ The implementation of an integrated patient management system for drug addiction
 
 Database Schema Design:![UML](https://github.com/user-attachments/assets/40bd69ff-73d2-47d5-aeb0-cb96c6038e05)
 
-           
+          
 Dependency: Detailed understanding of all data entities (Patients, Providers, Treatment Plans, Medications, Assessments, Appointments, Progress Notes, Relapses, etc.) and their relationships.
 Activity: Design the relational database schema with appropriate tables, columns, data types, primary keys, foreign key constraints to enforce relationships and data integrity. Utilize normalization principles.
 Backend Logic Development (e.g., PL/SQL Packages, API Services):
