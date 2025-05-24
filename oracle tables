@@ -1,0 +1,53 @@
+-- Table: Trials
+CREATE TABLE trials (
+    trial_id NUMBER PRIMARY KEY,
+    trial_name VARCHAR2(100),
+    start_date DATE,
+    end_date DATE,
+    status VARCHAR2(50)
+);
+
+-- Table: Sites
+CREATE TABLE sites (
+    site_id NUMBER PRIMARY KEY,
+    site_name VARCHAR2(100),
+    location VARCHAR2(100)
+);
+
+-- Table: Investigators
+CREATE TABLE investigators (
+    investigator_id NUMBER PRIMARY KEY,
+    name VARCHAR2(100),
+    site_id NUMBER,
+    specialty VARCHAR2(100),
+    FOREIGN KEY (site_id) REFERENCES sites(site_id)
+);
+
+-- Table: Patients
+CREATE TABLE patients (
+    patient_id NUMBER PRIMARY KEY,
+    name VARCHAR2(100),
+    dob DATE,
+    gender CHAR(1),
+    trial_id NUMBER,
+    FOREIGN KEY (trial_id) REFERENCES trials(trial_id)
+);
+
+-- Table: Observations
+CREATE TABLE observations (
+    obs_id NUMBER PRIMARY KEY,
+    patient_id NUMBER,
+    visit_date DATE,
+    observation TEXT,
+    FOREIGN KEY (patient_id) REFERENCES patients(patient_id)
+);
+
+-- Table: Adverse Events
+CREATE TABLE adverse_events (
+    event_id NUMBER PRIMARY KEY,
+    patient_id NUMBER,
+    event_date DATE,
+    description TEXT,
+    severity VARCHAR2(50),
+    FOREIGN KEY (patient_id) REFERENCES patients(patient_id)
+);
