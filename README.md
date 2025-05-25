@@ -81,6 +81,17 @@ Facilitate Regulatory Reporting: Generate required reports for government agenci
 Slide 6: BPMN Diagram Description: Patient Admission and Initial Assessment
 (Note: I cannot draw a diagram, but I will describe a simplified Business Process Model and Notation (BPMN) diagram for a typical patient admission and initial assessment flo![macrine alterd](https://github.com/user-attachments/assets/f50447ce-f4a4-4518-ac4c-70a01c69537f)
 w.)
+Reusable Code: Functions encapsulate a block of SQL or procedural code (like PL/SQL in Oracle) that can be executed repeatedly.
+Returns a Single Value: Unlike stored procedures, which can perform actions and return multiple results (or none), a function must return a single value. This makes them suitable for use directly within SQL queries (e.g., in SELECT, WHERE, HAVING clauses).
+Types:
+Scalar Functions: Return a single data value (e.g., a number, a string, a date).
+Table-Valued Functions (TVFs): Return a table. These are often used to encapsulate complex queries and provide a view-like interface.
+Purpose:
+Complex Calculations: Performing calculations that are too complex or repetitive for a standard SQL expression.
+Data Transformation: Formatting data (e.g., converting dates to specific string formats, calculating age from a birthdate).
+Business Logic: Encapsulating specific business rules that yield a single result.
+Code Reusability: Avoiding redundant code by defining a common operation once.
+![function](https://github.com/user-attachments/assets/acd3b7b8-0f31-4918-a9f9-73d42b9af42d)
 
 Diagram Title: Patient Admission and Initial Assessment Process
 
