@@ -34,7 +34,17 @@ Regulatory Compliance: Strict regulations govern patient data privacy and report
 Slide 4: Target Users
 This integrated patient management system would serve a diverse group of users, each with specific needs:
 ![oracle](https://github.com/user-attachments/assets/70994e2c-cb10-404a-a605-96419a0f8561)
-
+Automated Action: Triggers are database objects that run automatically (without being explicitly called) in response to certain events.
+Event-Driven: They are activated by Data Manipulation Language (DML) events (like INSERT, UPDATE, DELETE on a table) or Data Definition Language (DDL) events (like CREATE, ALTER, DROP of a database object), or even database system events (like STARTUP or SHUTDOWN).
+Purpose:
+Enforce Complex Business Rules: Beyond simple CHECK constraints. For example, ensuring a new order can't exceed a customer's credit limit.
+Maintain Data Integrity: Automatically updating related tables when changes occur in a primary table (e.g., updating stock levels after a sale).
+Auditing and Logging: Recording who changed what, when, and from where.
+Data Validation: Performing more complex validation checks before or after a data modification.
+Replication: Synchronizing data between different databases.
+Timing: Triggers can fire BEFORE or AFTER the triggering event.
+BEFORE triggers are useful for data validation or modifying data before it's stored.
+AFTER triggers are useful for actions that depend on the data being successfully committed, like logging.
 Addiction Therapists/Counselors:
 Access to patient history, progress notes, and treatment plans.
 Tools for session tracking, goal setting, and progress monitoring.
@@ -54,6 +64,9 @@ Manage user accounts, roles, permissions, and system configurations.
 Oversee data security and backups.
 Public Health Researchers/Policy Makers:
 Access anonymized aggregate data for trend analysis, program evaluation, and policy development.
+![trigger 1](https://github.com/user-attachments/assets/85afa2a0-54dc-4aaa-bb52-828f8dc9717d)
+![trigger 2](https://github.com/user-attachments/assets/0affed08-f59a-417f-bc9f-241a2047be70)
+
 Slide 5: Project Goals
 The primary goals for developing an integrated patient management system for drug addiction are:
 ![advers table macrine](https://github.com/user-attachments/assets/5ee7f7b6-1b37-4207-b3bf-8cbeb23367ba)
