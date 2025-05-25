@@ -33,6 +33,7 @@ Need for Data-Driven Decisions: To optimize treatment plans and allocate resourc
 Regulatory Compliance: Strict regulations govern patient data privacy and reporting in healthcare.
 Slide 4: Target Users
 This integrated patient management system would serve a diverse group of users, each with specific needs:
+![oracle](https://github.com/user-attachments/assets/70994e2c-cb10-404a-a605-96419a0f8561)
 
 Addiction Therapists/Counselors:
 Access to patient history, progress notes, and treatment plans.
