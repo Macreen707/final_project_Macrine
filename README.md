@@ -103,6 +103,15 @@ Medical Staff (Doctor/Nurse)
 Therapist/Counselor
 System (IT)
 Swimlanes (Roles within Pools):
+Encapsulation and Organization: Packages allow you to bundle related PL/SQL code units (procedures and functions) and data structures (variables, constants) into a single, named unit. This improves code organization and readability.
+Modularization: They promote modular programming by allowing you to define a clear interface (the package specification) and hide the implementation details (the package body). This means users only need to know how to call the procedures/functions in the specification, not how they work internally.
+Information Hiding: The package body can contain private procedures, functions, and variables that are not exposed outside the package. This protects internal logic and data from unintended external access.
+State Management (Package Variables): Package-level variables remain active for the duration of a session, allowing you to maintain state across multiple calls to procedures and functions within the same package during a user's session. This is useful for caching data or storing session-specific settings.
+Dependency Management: If a package specification changes, dependent objects need to be recompiled. However, if only the package body changes, dependent objects do not need recompilation, which minimizes impact on the database application.
+Overloading: Packages allow you to define multiple procedures or functions with the same name, as long as their parameters differ in number, type, or order. This provides flexibility and makes the code more intuitive to use.
+Enhanced Performance: The entire package is loaded into memory when one of its procedures or functions is called for the first time, leading to faster subsequent calls within the same session.
+Sources
+![packages](https://github.com/user-attachments/assets/fdb24ac5-ddba-4cfd-9ea5-ff8d3276646f)
 
 Within Front Desk/Admissions: Admissions Officer
 Within Medical Staff: Nurse, Doctor
