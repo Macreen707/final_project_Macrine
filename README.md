@@ -55,6 +55,7 @@ Public Health Researchers/Policy Makers:
 Access anonymized aggregate data for trend analysis, program evaluation, and policy development.
 Slide 5: Project Goals
 The primary goals for developing an integrated patient management system for drug addiction are:
+![advers table macrine](https://github.com/user-attachments/assets/5ee7f7b6-1b37-4207-b3bf-8cbeb23367ba)
 
 Centralize Patient Data: Create a single, secure, and comprehensive repository for all patient-related information, accessible to authorized personnel across the care continuum.
 Enhance Care Coordination: Facilitate seamless information exchange and communication between different healthcare providers and support services involved in a patient's care.
